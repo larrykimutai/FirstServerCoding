@@ -2,15 +2,15 @@ import java.net.*;
 import java.io.*;
 
 public class Client {
-  //initialize socket and input/output stream
-  private Socket socket = null;
-  private DataInputStream input = null;
-  private DataOutputStream out = null;
 
   //create constructor that accepts IP address and port number
   public Client(String address, int port) throws IOException {
 
     //establish a connection
+    //initialize socket and input/output stream
+    Socket socket = null;
+    DataInputStream input = null;
+    DataOutputStream out = null;
     try{
       //create socket and pass ip address and port number
       socket = new Socket(address, port);
