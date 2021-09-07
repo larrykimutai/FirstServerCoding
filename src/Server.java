@@ -19,6 +19,7 @@ public class Server {
       //when client gets connected to the server
       socket = server.accept();
       System.out.println("Client accepted");
+      System.out.println("____________________________");
 
       //take input from the client socket
       in = new DataInputStream(new BufferedInputStream(socket.getInputStream()));
@@ -36,6 +37,7 @@ public class Server {
           System.out.println(i);
         }
       }
+      System.out.println("____________________________");
       System.out.println("Closing connection...");
 
       //close connections
